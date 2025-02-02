@@ -65,6 +65,13 @@ public class BattleResultModel
             }
         }
         Time.timeScale = 0;
+        CursorUnlock();
         OnWin?.Invoke(!isWhite);
+    }
+
+    private static void CursorUnlock()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

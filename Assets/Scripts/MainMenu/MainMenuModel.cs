@@ -6,9 +6,10 @@ public class MainMenuModel
     private readonly SceneStateMachine sceneStateMachine;
     private readonly DataSave dataSave;
     
-    public MainMenuModel(SceneStateMachine sceneStateMachine)
+    public MainMenuModel(SceneStateMachine sceneStateMachine, DataSave dataSave)
     {
         this.sceneStateMachine = sceneStateMachine;
+        this.dataSave = dataSave;
     }
 
     public void OnButtonClicked(MainMenuButtons button)

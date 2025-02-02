@@ -5,10 +5,13 @@ public class MainMenuBootStrap : MonoBehaviour
 {
     [SerializeField]
     private MainMenuView mainMenuView;
+
+    private DataSave dataSave;
     private void Awake()
     {
         var serviceLocator = ServiceLocator.GetInstance();
-        MainMenuModel mainMenuModel = new(serviceLocator.SceneStateMachine);
+        dataSave = new();
+        MainMenuModel mainMenuModel = new(serviceLocator.SceneStateMachine, dataSave);
         MainMenuPresenter mainMenuPresenter = new(mainMenuView, mainMenuModel);
     }
 }

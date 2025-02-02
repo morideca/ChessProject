@@ -32,9 +32,15 @@ public class BattleBootStrap : MonoBehaviour
 
     private void Awake()
     {
-        // blackFigures.Add(63, FigureType.pawn);
-        // blackFigures.Add(62, FigureType.pawn);
-        blackFigures.Add(61, FigureType.pawn);
+         blackFigures.Add(143, FigureType.pawn); 
+         blackFigures.Add(142, FigureType.pawn);
+         blackFigures.Add(141, FigureType.pawn);
+         blackFigures.Add(140, FigureType.pawn);
+         blackFigures.Add(139, FigureType.pawn);
+         blackFigures.Add(138, FigureType.pawn);
+         blackFigures.Add(137, FigureType.pawn);
+         blackFigures.Add(136, FigureType.pawn);
+         
         
         LoadDesk();
  
@@ -43,6 +49,14 @@ public class BattleBootStrap : MonoBehaviour
         InitFabric();
         LoadFigures();
         InitBattleResult();
+        
+        TurnOffCursor();
+    }
+
+    private static void TurnOffCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void LoadDesk()

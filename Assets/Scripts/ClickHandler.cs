@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class ClickHandler : MonoBehaviour
 {
-    private Camera mainCamera;
+    private Camera mainCameraControl;
     private LayerMask layerMask;
     
     private FormationSave formationSave;
@@ -16,7 +16,7 @@ public class ClickHandler : MonoBehaviour
     
     private void Start()
     {
-        mainCamera = Camera.main;
+        mainCameraControl = Camera.main;
         layerMask = LayerMask.GetMask("Ground");
     }
 
@@ -25,7 +25,7 @@ public class ClickHandler : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
             var mousePosition = Input.mousePosition;
-            Ray ray = mainCamera.ScreenPointToRay(mousePosition);
+            Ray ray = mainCameraControl.ScreenPointToRay(mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit, 1000, layerMask))
             {
                 hit.collider.gameObject.TryGetComponent<CellInstance>(out CellInstance cellInstance);

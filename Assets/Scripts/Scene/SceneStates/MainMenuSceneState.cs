@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class MainMenuSceneState : IState
 {
     private readonly SceneLoad sceneLoad;
@@ -10,6 +12,7 @@ public class MainMenuSceneState : IState
     public void Enter()
     {
         sceneLoad.LoadScene(SceneType.mainMenu);
+        Time.timeScale = 1; 
     }
 
     public void Exit()

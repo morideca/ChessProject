@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c423ca1cbd429ca15d32e82147ff10, type: 3}
-  m_Name: BlackQueen
+  m_Name: Queen
   m_EditorClassIdentifier: 
   whiteFigurePrefab: {fileID: 5629748783858084097, guid: f3b160d4ce965944585677ce1889dcb0, type: 3}
   blackFigurePrefab: {fileID: 859737267939689825, guid: a84cff587a681c8439fd545bc63afcf0, type: 3}

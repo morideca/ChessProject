@@ -40,7 +40,6 @@ public class FormationBootStrap : MonoBehaviour
     {
         figureDrag = gameObject.AddComponent<FigureDrag>();
         LoadDesk(out List<CellInstance> deskCell);
-        clickHandler.Init(formationSave);
         InitFabric();
         InitUI(deskCell);
         LoadFigures();
@@ -62,7 +61,7 @@ public class FormationBootStrap : MonoBehaviour
 
     private void InitUI(List<CellInstance> deskCells)
     {
-        formationUIModel = new(factory, deskCells);
+        formationUIModel = new(factory, deskCells, formationSave);
         formationUIPresenter = new(formationUIView, formationUIModel);
     }
 

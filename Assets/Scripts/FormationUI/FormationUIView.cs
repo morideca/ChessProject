@@ -12,6 +12,14 @@ public class FormationUIView : MonoBehaviour
     [SerializeField] 
     private Button queenButton;
     [SerializeField] 
+    private Button kingButton;
+    [SerializeField] 
+    private Button knightButton;
+    [SerializeField] 
+    private Button rookButton;
+    [SerializeField] 
+    private Button bishopButton;
+    [SerializeField] 
     private Button pawnButton;
 
     private void Start()
@@ -19,6 +27,10 @@ public class FormationUIView : MonoBehaviour
         finish.onClick.AddListener(FinishClicked);
         queenButton.onClick.AddListener(QueenClicked);
         pawnButton.onClick.AddListener(PawnClicked);
+        kingButton.onClick.AddListener(KingClicked);
+        knightButton.onClick.AddListener(KnightClicked);
+        rookButton.onClick.AddListener(RookClicked);
+        bishopButton.onClick.AddListener(BishopClicked);
     }
 
     private void FinishClicked()
@@ -34,6 +46,26 @@ public class FormationUIView : MonoBehaviour
     private void PawnClicked()
     {
         OnFigureButtonClicked?.Invoke(FigureType.pawn);
+    }
+
+    private void KingClicked()
+    {
+        OnFigureButtonClicked?.Invoke(FigureType.king);
+    }
+
+    private void BishopClicked()
+    {
+        OnFigureButtonClicked?.Invoke(FigureType.bishop);
+    }
+
+    private void KnightClicked()
+    {
+        OnFigureButtonClicked?.Invoke(FigureType.knight);
+    }
+
+    private void RookClicked()
+    {
+        OnFigureButtonClicked?.Invoke(FigureType.rook);
     }
 }
 

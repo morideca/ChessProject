@@ -15,3 +15,7 @@ MonoBehaviour:
   figureConfigs:
   - {fileID: 11400000, guid: cd4458e627bd77443954733a1fc66a53, type: 2}
   - {fileID: 11400000, guid: 628b7f66f64004a47b04f8c55fc0318f, type: 2}
+  - {fileID: 11400000, guid: e20a045571c0f5a448878099d5c4bbad, type: 2}
+  - {fileID: 11400000, guid: ad77e5a133824d64a8e945a4d49c6231, type: 2}
+  - {fileID: 11400000, guid: db22e19e990e79d4087b3a5a6d7c20ea, type: 2}
+  - {fileID: 11400000, guid: 452640745e144cb4f97c94dc784592e5, type: 2}

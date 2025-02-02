@@ -5,15 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ba7ad54-5560-490b-8676-4d29593797ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Camera.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraControl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraControl.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BattleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BattleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/BattleBootStrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/BattleBootStrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Battle/BattleResult/BattleResultModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/BattleResult/BattleResultModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BlackPawns.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BlackPawns.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BlackQueen.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BlackQueen.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/ChessData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/ChessData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/Bishop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/Bishop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/BishopBlack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/BishopBlack.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/King.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/King.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/KingBlack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/KingBlack.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/Knight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/Knight.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/KnightBlack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/KnightBlack.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/Rook.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/Rook.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/RookBlack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/RookBlack.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FormationScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FormationScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClickHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FormationBootStrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FormationBootStrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FormationUI/FormationUIModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FormationUI/FormationUIModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FormationUI/FormationUIView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FormationUI/FormationUIView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scene/SceneStates/MainMenuSceneState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scene/SceneStates/MainMenuSceneState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +163,7 @@
       <workItem from="1737907992263" duration="5705000" />
       <workItem from="1737918404151" duration="34069000" />
       <workItem from="1738136369915" duration="17152000" />
-      <workItem from="1738418231689" duration="11825000" />
+      <workItem from="1738418231689" duration="14366000" />
     </task>
     <servers />
   </component>
@@ -169,63 +180,5 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/FormationUI/FormationUIView.cs</url>
-          <line>30</line>
-          <properties documentPath="C:\Users\User\Desktop\Games Unity\Middle projects\Project1\Assets\Scripts\FormationUI\FormationUIView.cs" containingFunctionPresentation="Method 'QueenClicked'">
-            <startOffsets>
-              <option value="689" />
-            </startOffsets>
-            <endOffsets>
-              <option value="737" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/FormationUI/FormationUIView.cs</url>
-          <line>35</line>
-          <properties documentPath="C:\Users\User\Desktop\Games Unity\Middle projects\Project1\Assets\Scripts\FormationUI\FormationUIView.cs" containingFunctionPresentation="Method 'PawnClicked'">
-            <startOffsets>
-              <option value="790" />
-            </startOffsets>
-            <endOffsets>
-              <option value="837" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Battle/BattleResult/BattleResultModel.cs</url>
-          <line>66</line>
-          <properties documentPath="C:\Users\User\Desktop\Games Unity\Middle projects\Project1\Assets\Scripts\Battle\BattleResult\BattleResultModel.cs" containingFunctionPresentation="Method 'OnDeathCheck'">
-            <startOffsets>
-              <option value="1601" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1620" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuModel.cs</url>
-          <line>24</line>
-          <properties documentPath="C:\Users\User\Desktop\Games Unity\Middle projects\Project1\Assets\Scripts\MainMenu\MainMenuModel.cs" containingFunctionPresentation="Method 'OnButtonClicked'">
-            <startOffsets>
-              <option value="725" />
-            </startOffsets>
-            <endOffsets>
-              <option value="745" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

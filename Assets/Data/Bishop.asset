@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c423ca1cbd429ca15d32e82147ff10, type: 3}
-  m_Name: BlackPawns
+  m_Name: Bishop
   m_EditorClassIdentifier: 
-  whiteFigurePrefab: {fileID: 4351342159150937543, guid: 0c1008f49cb1cf74ab50bae46f6ec8c2, type: 3}
-  blackFigurePrefab: {fileID: 151695336562636227, guid: f06a34eaf65485647930c0d0f2b2233d, type: 3}
-  health: 100
-  damage: 10
-  moveSpeed: 2
-  attackRange: 2
+  whiteFigurePrefab: {fileID: 2496010879223161236, guid: b11aae09735478347b64d3e68c73a337, type: 3}
+  blackFigurePrefab: {fileID: 864545111734092556, guid: 8e38f7659e2fe054791cfd20f09339b3, type: 3}
+  health: 120
+  damage: 15
+  moveSpeed: 3
+  attackRange: 4
   attackCooldown: 2
-  figureType: 4
+  figureType: 1

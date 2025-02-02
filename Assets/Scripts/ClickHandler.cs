@@ -7,13 +7,6 @@ public class ClickHandler : MonoBehaviour
     private Camera mainCameraControl;
     private LayerMask layerMask;
     
-    private FormationSave formationSave;
-
-    public void Init(FormationSave formationSave)
-    {
-        this.formationSave = formationSave;
-    }
-    
     private void Start()
     {
         mainCameraControl = Camera.main;
@@ -32,19 +25,11 @@ public class ClickHandler : MonoBehaviour
                 cellInstance?.OnClick();
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            formationSave.SaveFormation();
-        }
+        
         if (Input.GetKeyDown(KeyCode.L))
         {
             SceneManager.LoadScene("FormationScene");
         }
-
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            formationSave.ClearFormation();
-        }
+        
     }
 }

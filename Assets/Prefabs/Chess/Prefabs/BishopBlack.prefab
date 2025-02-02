@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 864545111734092557}
+  - component: {fileID: 292256843618519195}
   m_Layer: 0
   m_Name: BishopBlack
   m_TagString: Untagged
@@ -32,6 +33,27 @@ Transform:
   - {fileID: 8277521316832619111}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &292256843618519195
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864545111734092556}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.63456225, y: 1.6111126, z: 0.6297859}
+  m_Center: {x: 0.061726436, y: 0.8314785, z: 0.0037055612}
 --- !u!1 &5182582331398833036
 GameObject:
   m_ObjectHideFlags: 0

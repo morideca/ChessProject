@@ -33,12 +33,12 @@ public class FormationBootStrap : MonoBehaviour
     private DeskCreator deskCreator;
     private IFactory factory;
     private FigureLoad _figureLoad;
+    [SerializeField]
     private FigureDrag figureDrag;
     private FormationSave formationSave;
 
     private void Awake()
     {
-        figureDrag = gameObject.AddComponent<FigureDrag>();
         LoadDesk(out List<CellInstance> deskCell);
         InitFabric();
         InitUI(deskCell);
@@ -63,6 +63,7 @@ public class FormationBootStrap : MonoBehaviour
     {
         formationUIModel = new(factory, deskCells, formationSave);
         formationUIPresenter = new(formationUIView, formationUIModel);
+        figureDrag.FormationInit(formationUIModel);
     }
 
     private void LoadFigures()

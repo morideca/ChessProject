@@ -5,8 +5,11 @@ using UnityEngine.UI;
 public class FormationUIView : MonoBehaviour
 {
     public event Action OnFinishClicked;
+    public event Action OnSellClicked;
     public event Action<FigureType> OnFigureButtonClicked;
     
+    [SerializeField] 
+    private Button sell;
     [SerializeField] 
     private Button finish;
     [SerializeField] 
@@ -24,18 +27,14 @@ public class FormationUIView : MonoBehaviour
 
     private void Start()
     {
-        finish.onClick.AddListener(FinishClicked);
+        sell.onClick.AddListener(() => OnSellClicked?.Invoke());
+        finish.onClick.AddListener(() => OnFinishClicked?.Invoke());
         queenButton.onClick.AddListener(QueenClicked);
         pawnButton.onClick.AddListener(PawnClicked);
         kingButton.onClick.AddListener(KingClicked);
         knightButton.onClick.AddListener(KnightClicked);
         rookButton.onClick.AddListener(RookClicked);
         bishopButton.onClick.AddListener(BishopClicked);
-    }
-
-    private void FinishClicked()
-    {
-        OnFinishClicked?.Invoke();
     }
 
     private void QueenClicked()

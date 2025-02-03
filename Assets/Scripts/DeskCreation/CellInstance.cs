@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class CellInstance : MonoBehaviour
+public class CellInstance : MonoBehaviour, IClickable
 {
     public event Action<CellInstance> OnClicked;
     

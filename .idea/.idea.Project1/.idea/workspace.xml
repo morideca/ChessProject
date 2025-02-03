@@ -5,26 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ba7ad54-5560-490b-8676-4d29593797ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Formation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Formation/IClickable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Formation/IClickable.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/BlackPawns.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/BlackPawns.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/BlackQueen.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/BlackQueen.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/ChessData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/ChessData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/Bishop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/Bishop.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/BishopBlack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/BishopBlack.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/King.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/King.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/KingBlack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/KingBlack.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/Knight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/Knight.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/KnightBlack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/KnightBlack.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/Rook.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/Rook.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/RookBlack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chess/Prefabs/RookBlack.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FormationScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FormationScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClickHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FormationBootStrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FormationBootStrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClickHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Formation/ClickHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClickHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Formation/ClickHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeskCreation/CellInstance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DeskCreation/CellInstance.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FormationBootStrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Formation/FormationBootStrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FormationBootStrap.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Formation/FormationBootStrap.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FormationUI/FormationUIModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FormationUI/FormationUIModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FormationUI/FormationUIView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FormationUI/FormationUIView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scene/SceneStates/MainMenuSceneState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scene/SceneStates/MainMenuSceneState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GrabSystem.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DragSystem.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GrabSystem/FigureDrag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DragSystem/FigureDrag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GrabSystem/FigureDrag.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DragSystem/FigureDrag.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GrabSystem/IDragged.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DragSystem/IDragged.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GrabSystem/IDragged.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DragSystem/IDragged.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +159,7 @@
       <workItem from="1737907992263" duration="5705000" />
       <workItem from="1737918404151" duration="34069000" />
       <workItem from="1738136369915" duration="17152000" />
-      <workItem from="1738418231689" duration="14366000" />
+      <workItem from="1738418231689" duration="16978000" />
     </task>
     <servers />
   </component>

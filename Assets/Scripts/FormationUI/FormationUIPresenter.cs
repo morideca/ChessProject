@@ -14,5 +14,6 @@ public class FormationUIPresenter
     {
         view.OnFigureButtonClicked += (FigureType type) => model.CreateFigure(type);
         view.OnFinishClicked += () => model.ReturnToMainMenu();
+        view.OnSellClicked += () => model.SellFigure();
     }
 }

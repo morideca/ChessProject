@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class FigureDrag : MonoBehaviour
 {
+    private FormationUIModel formationUIModel;
+    
     private Camera mainCamera;
     private LayerMask layerMask;
     private const float fixedHeight = 2f;
@@ -22,6 +24,22 @@ public class FigureDrag : MonoBehaviour
         if (dragging)
         {
             DragFigureUpdate();
+        }
+    }
+
+    public void FormationInit(FormationUIModel formationUIModel)
+    {
+        this.formationUIModel = formationUIModel;
+        formationUIModel.OnSoldFigure += OnSoldFigure;
+    }
+
+    private void OnSoldFigure()
+    {
+        if (draggedFigure != null)
+        {
+            Destroy(draggedFigure.GameObject);
+            draggedFigure = null;
+            SwitchDragging();
         }
     }
     

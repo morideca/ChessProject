@@ -1,10 +1,11 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
-using UnityEngine.UI;
 
 public class FormationUIModel
 {
+    public event Action OnSoldFigure;
+    
     private IFactory factory;
     private List<CellInstance> deskCells;
     private FormationSave formationSave;
@@ -26,5 +27,10 @@ public class FormationUIModel
     {
         formationSave.SaveFormation();
         ServiceLocator.GetInstance().SceneStateMachine.ChangeState(SceneType.mainMenu);
+    }
+
+    public void SellFigure()
+    {
+        OnSoldFigure?.Invoke();
     }
 }

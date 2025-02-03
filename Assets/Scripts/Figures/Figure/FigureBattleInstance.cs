@@ -46,7 +46,7 @@ public class FigureBattleInstance : MonoBehaviour
 
     private void InstantiateHealthBar(GameObject healthBarPrefab, Health health)
     {
-        Vector3 position = transform.position +Vector3.up * 1;
+        Vector3 position = transform.position +Vector3.up * 2;
         var healthBarPrebaf = Instantiate(healthBarPrefab, position, Quaternion.identity, transform);
         var healthBar = healthBarPrebaf.GetComponent<HealthBar>();
         healthBar.Init(health);

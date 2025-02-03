@@ -3,16 +3,31 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float mouseSensitivity = 5f;
+    public float mouseSensitivity = 2f;
     public float minY = -90f, maxY = 90f;
 
     private float rotationX = 0f;
 
-    void FixedUpdate()
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    void Update()
     {
         float moveX = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
         float moveZ = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
-        transform.Translate(moveX, 0, moveZ);
+
+        Vector3 forward = transform.forward;
+        Vector3 right = transform.right;
+
+        forward.y = 0;  
+        right.y = 0;    
+        forward.Normalize();
+        right.Normalize();
+
+        transform.position += forward * moveZ + right * moveX;
 
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
@@ -20,6 +35,6 @@ public class CameraControl : MonoBehaviour
         rotationX -= mouseY;
         rotationX = Mathf.Clamp(rotationX, minY, maxY);
 
-        transform.localRotation = Quaternion.Euler(rotationX, transform.localRotation.eulerAngles.y + mouseX, 0);
+        transform.rotation = Quaternion.Euler(rotationX, transform.rotation.eulerAngles.y + mouseX, 0);
     }
 }

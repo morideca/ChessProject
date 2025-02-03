@@ -55,7 +55,7 @@ public class FigureDrag : MonoBehaviour
             }
             else
             {
-                cellInstance.SetFigure(null);
+                cellInstance.SetFigure(true, null);
             }
             draggedFigure = newDraggedFigure;
             newDraggedFigure = null;
@@ -82,7 +82,8 @@ public class FigureDrag : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit, 1000, layerMask))
         {
             draggedFigure.GameObject.transform.position = hit.transform.position;
-            cellInstance.SetFigure(draggedFigure.GameObject);
+            bool isWhite = draggedFigure.GameObject.GetComponent<FigureFormationInstance>().IsWhite;
+            cellInstance.SetFigure(isWhite, draggedFigure.GameObject);
         }
     }
 

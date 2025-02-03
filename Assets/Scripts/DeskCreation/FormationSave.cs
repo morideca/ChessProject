@@ -15,35 +15,48 @@ public class FormationSave
         serviceLocator = ServiceLocator.GetInstance();
     }
 
-    public void SaveFormation()
+    public void SaveFormation(bool isWhite)
     {
-        var fromationData = new FormationData();
+        List<FigureData> formationData = new();
         foreach (var cell in deskCells)
         {
-            FigureData figureData = new();
-            figureData.Type = cell.Type;
-            figureData.Index = cell.Index;
-            fromationData.Data.Add(figureData);
+            if (cell.FigureGO != null)
+            {
+                FigureData figureData = new();
+                figureData.Type = cell.Type;
+                figureData.Index = cell.Index;
+                figureData.IsWhite = cell.IsWhite;
+                if (cell.IsWhite == isWhite)
+                {
+                    formationData.Add(figureData);
+                }
+            }
         }
-        serviceLocator.FormationData = fromationData;
+
+        if (isWhite)
+        {
+            serviceLocator.FormationData.WhiteData = formationData;
+        }
+        else
+        {
+            serviceLocator.FormationData.BlackData = formationData;
+        }
     }
 
     public void ClearFormation()
     {
-        ServiceLocator.GetInstance().FormationData.Data.Clear();
+        ServiceLocator.GetInstance().FormationData.WhiteData.Clear();
     }
 
-    public Dictionary<int, FigureType> LoadFormation()
+    public FormationData LoadFormation()
     {
-        if (serviceLocator.FormationData.Data.Count > 0)
+        if (serviceLocator.FormationData.WhiteData.Count > 0 || serviceLocator.FormationData.BlackData.Count > 0)
         {
-            Dictionary<int, FigureType> formation = serviceLocator.FormationData.Data
-                .ToDictionary(figureData => figureData.Index, figureData => figureData.Type);
-            return formation;
+            return serviceLocator.FormationData;
         }
         else
         {
-            return new Dictionary<int, FigureType>();
+            return new FormationData();
         }
     }
 }

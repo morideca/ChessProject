@@ -14,12 +14,14 @@ public class SceneStateMachine : MonoBehaviour, IStateMachine
     private readonly IState battleState;
     private readonly IState formationState;
     private readonly IState mainMenuState;
+    private readonly IState levelCreateState;
     
     public SceneStateMachine(SceneLoad sceneLoad)
     {
         battleState = new BattleSceneState(sceneLoad);
         formationState = new FormationSceneState(sceneLoad);
         mainMenuState = new MainMenuSceneState(sceneLoad);
+        levelCreateState = new LevelCreateState(sceneLoad);
     }
 
     public void ChangeState(SceneType sceneType)
@@ -35,6 +37,9 @@ public class SceneStateMachine : MonoBehaviour, IStateMachine
                 break;
             case SceneType.formation:
                 newState = formationState;
+                break;
+            case SceneType.levelCreate:
+                newState = levelCreateState;
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(sceneType), sceneType, null);

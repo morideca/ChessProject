@@ -26,6 +26,9 @@ public class MainMenuModel
                 dataSave.SaveData();
                 Application.Quit();
                 break;
+            case MainMenuButtons.levelCreate:
+                sceneStateMachine.ChangeState(SceneType.levelCreate);
+                break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(button), button, null);
         }

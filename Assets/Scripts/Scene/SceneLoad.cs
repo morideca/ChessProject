@@ -5,7 +5,8 @@ public enum SceneType
 {
     mainMenu,
     battle,
-    formation
+    formation,
+    levelCreate
 }
 
 public class SceneLoad
@@ -22,6 +23,9 @@ public class SceneLoad
                 break;
             case SceneType.formation:
                 SceneManager.LoadScene("FormationScene");
+                break;
+            case SceneType.levelCreate:
+                SceneManager.LoadScene("LevelCreate");
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(scene), scene, null);

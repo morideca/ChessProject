@@ -79,8 +79,8 @@ public class BattleBootStrap : MonoBehaviour
 
     private void LoadFigures()
     {
-        figureLoad = new(formationSave, factory, deskCreator.DeskCells, blackFigures);
-        figureLoad.LoadFigures(true);
+        figureLoad = new(formationSave, factory, deskCreator.DeskCells);
+        figureLoad.LoadFigures(true, true);
     }
    
 }

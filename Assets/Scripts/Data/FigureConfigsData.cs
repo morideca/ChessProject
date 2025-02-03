@@ -7,6 +7,6 @@ public class FigureConfigsData : ScriptableObject
 {
     public List<FigureConfig> FigureConfigs => figureConfigs;
     
-    [FormerlySerializedAs("figureConfigs")] [SerializeField] 
+    [SerializeField] 
     private List<FigureConfig> figureConfigs;
 }

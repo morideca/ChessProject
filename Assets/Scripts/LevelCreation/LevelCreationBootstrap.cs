@@ -1,9 +1,7 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class FormationBootStrap : MonoBehaviour
+public class LevelCreationBootstrap : MonoBehaviour
 {
     [SerializeField] 
     private GameObject cellPrefab;
@@ -27,8 +25,6 @@ public class FormationBootStrap : MonoBehaviour
 
     private DeskPresenter deskPresenter;
     private DeskModel deskModel;
-    
-    private Dictionary<int, FigureType> blackFigures = new();
     
     private DeskCreator deskCreator;
     private IFactory factory;
@@ -61,7 +57,7 @@ public class FormationBootStrap : MonoBehaviour
 
     private void InitUI(List<CellInstance> deskCells)
     {
-        formationUIModel = new(factory, deskCells, formationSave, true);
+        formationUIModel = new(factory, deskCells, formationSave, false);
         formationUIPresenter = new(formationUIView, formationUIModel);
         figureDrag.FormationInit(formationUIModel);
     }
@@ -69,6 +65,6 @@ public class FormationBootStrap : MonoBehaviour
     private void LoadFigures()
     {
         figureLoad = new(formationSave, factory, deskCreator.DeskCells);
-        figureLoad.LoadFigures(false, true);
+        figureLoad.LoadFigures(false, false);
     }
 }

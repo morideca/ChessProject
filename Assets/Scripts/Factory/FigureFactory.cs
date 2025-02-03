@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -23,7 +21,7 @@ public class FigureFactory : IFactory
     public List<GameObject> WhiteFigures { get; private set; } = new();
     public List<GameObject> BlackFigures { get; private set; } = new();
     
-    public FigureFactory(FigureConfigsData configs, DeskModel deskModel)
+    public FigureFactory(FigureConfigsData configs)
     {
         this.configs = configs;
     }
@@ -46,9 +44,9 @@ public class FigureFactory : IFactory
         }
         else
         {
-            AddFormationInstance(Figure, figureType);
+            AddFormationInstance(Figure, figureType, isWhite);
         }
-        cell.SetFigure(Figure);
+        cell.SetFigure(isWhite, Figure);
     }
 
     private void InstantiatePrefab(FigureType figureType, CellInstance cellInstance, bool isWhite, out FigureConfig config, out GameObject chess)
@@ -73,9 +71,10 @@ public class FigureFactory : IFactory
         }
     }
 
-    private void AddFormationInstance(GameObject chess, FigureType figureType)
+    private void AddFormationInstance(GameObject chess, FigureType figureType, bool isWhite)
     {
         var instance = chess.AddComponent<FigureFormationInstance>();
         instance.SetType(figureType);
+        instance.IsWhite = isWhite;
     }
 }

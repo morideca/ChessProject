@@ -6,4 +6,5 @@ public class FigureData
 {
     public int Index;
     public FigureType Type;
+    public bool IsWhite;
 }

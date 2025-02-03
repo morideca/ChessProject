@@ -6,7 +6,8 @@ public enum MainMenuButtons
 {
     startBattle,
     startFormation,
-    exit
+    exit,
+    levelCreate
 }
 public class MainMenuView : MonoBehaviour
 {
@@ -18,12 +19,15 @@ public class MainMenuView : MonoBehaviour
     private Button startFormation;
     [SerializeField]
     private Button exit;
+    [SerializeField] 
+    private Button LevelCreate;
 
     private void Awake()
     {
         startBattle.onClick.AddListener(StartBattle);
         startFormation.onClick.AddListener(StarteFormation);
         exit.onClick.AddListener(Exit);
+        LevelCreate.onClick.AddListener(StartLevelCreate);
     }
 
     private void StartBattle()
@@ -38,5 +42,9 @@ public class MainMenuView : MonoBehaviour
     {
         OnButtonClicked?.Invoke(MainMenuButtons.exit);
     }
-    
+
+    private void StartLevelCreate()
+    {
+        OnButtonClicked?.Invoke(MainMenuButtons.levelCreate);
+    }
 }

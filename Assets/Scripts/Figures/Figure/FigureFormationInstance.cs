@@ -5,6 +5,7 @@ public class FigureFormationInstance : MonoBehaviour, IDragged
     private Collider collider;
     public GameObject GameObject { get; private set; }
     public FigureType Type { get; private set; }
+    public bool IsWhite;
 
     private void Start()
     {

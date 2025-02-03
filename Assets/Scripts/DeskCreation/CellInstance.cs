@@ -8,6 +8,7 @@ public class CellInstance : MonoBehaviour, IClickable
     public int Index { get; private set; }
     public GameObject FigureGO { get; private set; }
     public FigureType Type { get; private set; }
+    public bool IsWhite { get; private set; }
 
     public void OnClick()
     {
@@ -19,9 +20,10 @@ public class CellInstance : MonoBehaviour, IClickable
         Index = index;
     }
 
-    public void SetFigure(GameObject figure = null)
+    public void SetFigure(bool isWhite, GameObject figure = null)
     {
         FigureGO = figure;
+        IsWhite = isWhite;
         if (figure == null)
         {
             Type = FigureType.none;

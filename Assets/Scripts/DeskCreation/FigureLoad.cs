@@ -8,41 +8,48 @@ public class FigureLoad
     private readonly IFactory factory;
     private readonly FormationSave formationSave;
     
-    private  Dictionary<int, FigureType> whiteFigures;
-    private  Dictionary<int, FigureType> blackFigures;
+    private  List<FigureData> WhiteFigures;
+    private  List<FigureData> BlackFigures;
     
     public FigureLoad(FormationSave formationSave, IFactory factory, 
-        List<CellInstance> deskCells, Dictionary<int, FigureType> blackFigures)
+        List<CellInstance> deskCells)
     {
         this.formationSave = formationSave;
         this.deskCells = deskCells;
         this.factory = factory;
-        this.blackFigures = blackFigures;
         LoadFormation();
     }
 
-    public void LoadFigures(bool isBattle)
+    public void LoadFigures(bool isBattle, bool isWhite)
     {
-        whiteFigures = formationSave.LoadFormation();
-        foreach (var (index, value) in whiteFigures)
+        if (isBattle || isWhite)
         {
-            var cell = deskCells[index];
-            factory.CreateFigure(value, cell, true, isBattle);
-        }
-
-        if (isBattle)
-        {
-            foreach (var (index, value) in blackFigures)
+            WhiteFigures = formationSave.LoadFormation().WhiteData;
+            foreach (var figure in WhiteFigures)
             {
-                var cell = deskCells[index];
-                factory.CreateFigure(value, cell, false, isBattle);
+                if (!figure.IsWhite) continue;
+                var cell = deskCells[figure.Index];
+                factory.CreateFigure(figure.Type, cell, figure.IsWhite, isBattle);
+            }
+        }
+        
+        if (isBattle || !isWhite)
+        {
+            BlackFigures = formationSave.LoadFormation().BlackData;
+            foreach (var figure in BlackFigures)
+            {
+                if (figure.IsWhite) continue;
+                var cell = deskCells[figure.Index];
+                factory.CreateFigure(figure.Type, cell, figure.IsWhite, isBattle);
             }
         }
     }
-    
+
     private void LoadFormation()
     {
-        whiteFigures?.Clear();
-        whiteFigures = formationSave.LoadFormation();
+        WhiteFigures?.Clear();
+        WhiteFigures = formationSave.LoadFormation().WhiteData;
+        BlackFigures?.Clear();
+        BlackFigures = formationSave.LoadFormation().BlackData;
     }
 }

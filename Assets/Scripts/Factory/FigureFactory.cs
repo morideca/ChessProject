@@ -5,7 +5,7 @@ using Object = UnityEngine.Object;
 public enum FigureType
 {
     none,
-    bishop,
+    warrior,
     king,
     queen,
     pawn,
@@ -53,7 +53,8 @@ public class FigureFactory : IFactory
     {
         config = configs.FigureConfigs.Find(x => x.FigureType == figureType);
         var prefab = isWhite ? config.WhiteFigurePrefab : config.BlackFigurePrefab;
-        chess = Object.Instantiate(prefab, cellInstance.transform.position, Quaternion.identity);
+        var angle = isWhite ? Quaternion.Euler(0, 90, 0) : Quaternion.Euler(0, -90, 0);
+        chess = Object.Instantiate(prefab, cellInstance.transform.position, angle);
     }
 
     private void AddBattleInstance(FigureType figureType, bool isWhite, GameObject chess, FigureConfig config)

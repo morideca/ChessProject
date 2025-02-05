@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="5ba7ad54-5560-490b-8676-4d29593797ff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BattleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BattleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Bishop.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Bishop.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FormationScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FormationScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/FigureFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/FigureFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Figures/Attack/FigureAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Figures/Attack/FigureAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Figures/Figure/FigureAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Figures/Figure/FigureAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Figures/Figure/FigureBattleInstance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Figures/Figure/FigureBattleInstance.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Figures/Movement/FigureMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Figures/Movement/FigureMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Figures/Movement/IMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Figures/Movement/IMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Formation/FormationUIMVP/FormationUIView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Formation/FormationUIMVP/FormationUIView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +155,7 @@
       <workItem from="1737907992263" duration="5705000" />
       <workItem from="1737918404151" duration="34069000" />
       <workItem from="1738136369915" duration="17152000" />
-      <workItem from="1738418231689" duration="28122000" />
+      <workItem from="1738418231689" duration="33486000" />
     </task>
     <servers />
   </component>

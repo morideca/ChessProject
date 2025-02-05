@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class FormationUIView : MonoBehaviour
@@ -21,7 +22,7 @@ public class FormationUIView : MonoBehaviour
     [SerializeField] 
     private Button rookButton;
     [SerializeField] 
-    private Button bishopButton;
+    private Button warriorButton;
     [SerializeField] 
     private Button pawnButton;
 
@@ -29,42 +30,12 @@ public class FormationUIView : MonoBehaviour
     {
         sell.onClick.AddListener(() => OnSellClicked?.Invoke());
         finish.onClick.AddListener(() => OnFinishClicked?.Invoke());
-        queenButton.onClick.AddListener(QueenClicked);
-        pawnButton.onClick.AddListener(PawnClicked);
-        kingButton.onClick.AddListener(KingClicked);
-        knightButton.onClick.AddListener(KnightClicked);
-        rookButton.onClick.AddListener(RookClicked);
-        bishopButton.onClick.AddListener(BishopClicked);
-    }
-
-    private void QueenClicked()
-    {
-        OnFigureButtonClicked?.Invoke(FigureType.queen);
-    }
-
-    private void PawnClicked()
-    {
-        OnFigureButtonClicked?.Invoke(FigureType.pawn);
-    }
-
-    private void KingClicked()
-    {
-        OnFigureButtonClicked?.Invoke(FigureType.king);
-    }
-
-    private void BishopClicked()
-    {
-        OnFigureButtonClicked?.Invoke(FigureType.bishop);
-    }
-
-    private void KnightClicked()
-    {
-        OnFigureButtonClicked?.Invoke(FigureType.knight);
-    }
-
-    private void RookClicked()
-    {
-        OnFigureButtonClicked?.Invoke(FigureType.rook);
+        queenButton.onClick.AddListener(() => OnFigureButtonClicked?.Invoke(FigureType.queen));
+        pawnButton.onClick.AddListener(() => OnFigureButtonClicked?.Invoke(FigureType.pawn));
+        kingButton.onClick.AddListener(() => OnFigureButtonClicked?.Invoke(FigureType.king));
+        knightButton.onClick.AddListener(() => OnFigureButtonClicked?.Invoke(FigureType.knight));
+        rookButton.onClick.AddListener(() => OnFigureButtonClicked?.Invoke(FigureType.rook));
+        warriorButton.onClick.AddListener(() => OnFigureButtonClicked?.Invoke(FigureType.warrior));
     }
 }
 

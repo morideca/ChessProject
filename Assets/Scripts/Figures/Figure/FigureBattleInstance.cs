@@ -9,6 +9,7 @@ public class FigureBattleInstance : MonoBehaviour
     
     private NavMeshAgent navMeshAgent;
     private FigureAI figureAI;
+    private Animator animator;
     
     public FigureType FigureType { get; private set; }
     
@@ -22,6 +23,7 @@ public class FigureBattleInstance : MonoBehaviour
     public void Init(FigureType figureType, FigureConfig config, GameObject healthBarPrefab, List<GameObject> enemies, bool isWhite)
     {
         navMeshAgent = gameObject.AddComponent<NavMeshAgent>();
+        animator = gameObject.GetComponentInChildren<Animator>();
         navMeshAgent.stoppingDistance = config.AttackRange - 0.1f;
         this.isWhite = isWhite;
         InitAI(config, enemies);
@@ -31,9 +33,9 @@ public class FigureBattleInstance : MonoBehaviour
 
     private void InitAI(FigureConfig config, List<GameObject> enemies)
     {
-        FigureAttack figureAttack = new(config.Damage,  config.AttackCooldown, config.AttackCooldown);
-        FigureMove figureMove = new(navMeshAgent, config.MoveSpeed);
-        figureAI = new(enemies, figureAttack, figureMove, this.gameObject, config.AttackRange);
+        FigureAttack figureAttack = new(animator, config.Damage,  config.AttackCooldown);
+        FigureMove figureMove = new(animator, navMeshAgent, config.MoveSpeed);
+        figureAI = new(enemies, figureAttack, figureMove, gameObject, config.AttackRange);
     }
 
     private void InitHealth(FigureConfig config, GameObject healthBarPrefab)

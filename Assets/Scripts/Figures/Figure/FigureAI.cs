@@ -7,25 +7,25 @@ public class FigureAI
     private readonly IMove figureMove;
     private readonly List<GameObject> targets;
     private readonly float attackRange;
-    private readonly GameObject chessGO;
+    private readonly GameObject figureGO;
     
     private GameObject target;
     private float distanceToTarget;
 
     
-    public FigureAI(List<GameObject> targets, IAttack figureAttack, IMove figureMove, GameObject chessGO, float attackRange)
+    public FigureAI(List<GameObject> targets, IAttack figureAttack, IMove figureMove, GameObject figureGO, float attackRange)
     {
         this.figureAttack = figureAttack;
         this.targets = targets;
         this.figureMove = figureMove;
         this.attackRange = attackRange;
-        this.chessGO = chessGO;
+        this.figureGO = figureGO;
     }
 
     public void Tick()
     {
         FindClosestTargetUpdate();
-        figureMove.MoveToUpdate(target.transform);
+        figureMove.MoveToUpdate(target.transform, figureGO);
         AttackUpdate();
     }
 
@@ -44,7 +44,7 @@ public class FigureAI
             foreach (var _target in targets)
             {
                 if (_target == null) continue;
-                var newDistance = (_target.transform.position - chessGO.transform.position).magnitude;
+                var newDistance = (_target.transform.position - figureGO.transform.position).magnitude;
                 if (newDistance < distanceToTarget)
                 {
                     distanceToTarget = newDistance;

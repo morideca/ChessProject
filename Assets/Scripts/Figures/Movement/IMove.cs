@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface IMove
 {
-    public void MoveToUpdate(Transform target);
+    public void MoveToUpdate(Transform target, GameObject figureGameObject);
 }

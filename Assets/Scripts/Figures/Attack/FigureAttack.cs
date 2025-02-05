@@ -5,11 +5,14 @@ public class FigureAttack : IAttack
 {
     private readonly int damage;
     private readonly int cooldown;
+    private readonly Animator animator;
+    private readonly int attack = Animator.StringToHash("Attack");
 
     private bool attackCharged;
 
-    public FigureAttack(int damage, int cooldown, float range)
+    public FigureAttack(Animator animator, int damage, int cooldown)
     {
+        this.animator = animator;
         this.damage = damage;
         this.cooldown = cooldown;
         attackCharged = true;
@@ -19,6 +22,7 @@ public class FigureAttack : IAttack
     {
         if(attackCharged)
         {
+            animator.SetTrigger(attack);
             target.GetComponent<IDamageable>().TakeDamage(damage);
             ChargeAttack();
         }

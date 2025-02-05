@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03c423ca1cbd429ca15d32e82147ff10, type: 3}
+  m_Name: Warrior
+  m_EditorClassIdentifier: 
+  whiteFigurePrefab: {fileID: 5248043377371869633, guid: bc145cc89372a0943b35884ce8621843, type: 3}
+  blackFigurePrefab: {fileID: 7039771891673170712, guid: d99ee9944fd2d0547bcc18bd301640f8, type: 3}
+  health: 120
+  damage: 15
+  moveSpeed: 3
+  attackRange: 1.2
+  attackCooldown: 2
+  figureType: 1

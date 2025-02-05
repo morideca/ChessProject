@@ -580,7 +580,7 @@ MonoBehaviour:
   kingButton: {fileID: 1969254557}
   knightButton: {fileID: 1678877576}
   rookButton: {fileID: 433813216}
-  bishopButton: {fileID: 1195654378}
+  warriorButton: {fileID: 1195654378}
   pawnButton: {fileID: 667968640}
 --- !u!114 &546222207
 MonoBehaviour:
@@ -904,10 +904,10 @@ RectTransform:
   - {fileID: 1956819386}
   m_Father: {fileID: 546222210}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.88983345, y: 0.79364693}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16, y: -795}
-  m_SizeDelta: {x: -112.00001, y: -112.00001}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -122, y: 116}
+  m_SizeDelta: {x: 99.99999, y: 98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &705507993
 GameObject:
@@ -1242,7 +1242,7 @@ GameObject:
   - component: {fileID: 1195654379}
   - component: {fileID: 1195654378}
   m_Layer: 5
-  m_Name: CreateBishop
+  m_Name: CreateWarrior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2436,7 +2436,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Create Bishop
+  m_text: Warrior
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

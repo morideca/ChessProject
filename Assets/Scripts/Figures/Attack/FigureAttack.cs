@@ -7,25 +7,36 @@ public class FigureAttack : IAttack
     private readonly int cooldown;
     private readonly Animator animator;
     private readonly int attack = Animator.StringToHash("Attack");
+    private readonly FigureAnimationEvents animationEvents;
+
+    private GameObject target;
 
     private bool attackCharged;
 
-    public FigureAttack(Animator animator, int damage, int cooldown)
+    public FigureAttack(FigureAnimationEvents animationEvents, Animator animator, int damage, int cooldown)
     {
+        this.animationEvents = animationEvents;
         this.animator = animator;
         this.damage = damage;
         this.cooldown = cooldown;
         attackCharged = true;
+        animationEvents.OnDealtDamage += DealDamage;
     }
     
     public void Attack(GameObject target)
     {
+        this.target = target;
         if(attackCharged)
         {
             animator.SetTrigger(attack);
-            target.GetComponent<IDamageable>().TakeDamage(damage);
             ChargeAttack();
         }
+    }
+
+    private void DealDamage()
+    {
+        if (target == null) return;
+        target.GetComponent<IDamageable>().TakeDamage(damage);
     }
 
     private async void ChargeAttack()

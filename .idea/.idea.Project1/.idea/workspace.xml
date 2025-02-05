@@ -5,14 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ba7ad54-5560-490b-8676-4d29593797ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Figures/Animator.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Figures/Animator/FigureAnimationEvents.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Figures/Animator/FigureAnimationEvents.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Figures/Projectile.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Black/BlackWarrior.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Black/BlackWarrior.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/White/WhiteWarrior.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Warrior/White/WhiteWarrior.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Queen.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Queen.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/Misc/TestAnimationStateBehaviourInject/AnimatorController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/Misc/TestAnimationStateBehaviourInject/AnimatorController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation/1H_Melee_Attack_Chop.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation/1H_Melee_Attack_Chop.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation/Cheer.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation/Cheer.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation/Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation/Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation/New Animation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation/New Animation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation/Running_A.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation/Running_A.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation/Skeleton_Warrior.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation/Skeleton_Warrior.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation/Warrior.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Animation/Warrior.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Black.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Black/BlackWarrior.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/Black/BlackWarrior.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/White.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/White/WhiteWarrior.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Warrior/White/WhiteWarrior.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EntryPoint.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EntryPoint.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FormationScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FormationScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelCreate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelCreate.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/FigureConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/FigureConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/FigureFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/FigureFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Figures/Animator/FigureAnimationEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Figures/Animator/FigureAnimationEvents.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Figures/Attack/FigureAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Figures/Attack/FigureAttack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Figures/Figure/FigureBattleInstance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Figures/Figure/FigureBattleInstance.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Formation/FormationUIMVP/FormationUIView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Formation/FormationUIMVP/FormationUIView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +180,7 @@
       <workItem from="1737907992263" duration="5705000" />
       <workItem from="1737918404151" duration="34069000" />
       <workItem from="1738136369915" duration="17152000" />
-      <workItem from="1738418231689" duration="35199000" />
+      <workItem from="1738418231689" duration="39711000" />
     </task>
     <servers />
   </component>
@@ -180,5 +208,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Figures/Figure/FigureBattleInstance.cs</url>
+          <line>43</line>
+          <properties documentPath="C:\Users\User\Desktop\Games Unity\Middle projects\Project1\Assets\Scripts\Figures\Figure\FigureBattleInstance.cs" containingFunctionPresentation="Method 'InitAI'">
+            <startOffsets>
+              <option value="1470" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1471" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

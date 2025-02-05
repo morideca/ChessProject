@@ -7,7 +7,7 @@ public enum FigureType
     none,
     warrior,
     king,
-    queen,
+    mage,
     pawn,
     knight,
     rook

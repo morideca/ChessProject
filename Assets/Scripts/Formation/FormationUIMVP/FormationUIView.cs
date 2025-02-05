@@ -16,25 +16,13 @@ public class FormationUIView : MonoBehaviour
     [SerializeField] 
     private Button queenButton;
     [SerializeField] 
-    private Button kingButton;
-    [SerializeField] 
-    private Button knightButton;
-    [SerializeField] 
-    private Button rookButton;
-    [SerializeField] 
     private Button warriorButton;
-    [SerializeField] 
-    private Button pawnButton;
 
     private void Start()
     {
         sell.onClick.AddListener(() => OnSellClicked?.Invoke());
         finish.onClick.AddListener(() => OnFinishClicked?.Invoke());
-        queenButton.onClick.AddListener(() => OnFigureButtonClicked?.Invoke(FigureType.queen));
-        pawnButton.onClick.AddListener(() => OnFigureButtonClicked?.Invoke(FigureType.pawn));
-        kingButton.onClick.AddListener(() => OnFigureButtonClicked?.Invoke(FigureType.king));
-        knightButton.onClick.AddListener(() => OnFigureButtonClicked?.Invoke(FigureType.knight));
-        rookButton.onClick.AddListener(() => OnFigureButtonClicked?.Invoke(FigureType.rook));
+        queenButton.onClick.AddListener(() => OnFigureButtonClicked?.Invoke(FigureType.mage));
         warriorButton.onClick.AddListener(() => OnFigureButtonClicked?.Invoke(FigureType.warrior));
     }
 }

@@ -35,7 +35,17 @@ public class FigureBattleInstance : MonoBehaviour
 
     private void InitAI(FigureConfig config, List<GameObject> enemies)
     {
-        FigureAttack figureAttack = new(animationEvents, animator, config.Damage,  config.AttackCooldown);
+        FigureAttack figureAttack;
+        if (config.IsRanged)
+        {
+            Transform projectileGun = transform.Find("Gun");
+            figureAttack = new(animationEvents, animator, config.Damage, config.AttackCooldown,
+                config.IsRanged, config.Projectile, projectileGun);
+        }
+        else
+        { 
+            figureAttack = new(animationEvents, animator, config.Damage, config.AttackCooldown);
+        }
         FigureMove figureMove = new(animator, navMeshAgent, config.MoveSpeed);
         figureAI = new(enemies, figureAttack, figureMove, gameObject, config.AttackRange);
     }

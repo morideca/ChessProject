@@ -3,16 +3,16 @@ using UnityEngine;
 
 public class FigureAnimationEvents : MonoBehaviour
 {
-    public event Action OnDealtDamage;
-    public event Action OnCreatedProjectile;
+    public event Action OnDealDamage;
+    public event Action OnShootProjectile;
 
     public void DealDamage()
     {
-        OnDealtDamage?.Invoke();
+        OnDealDamage?.Invoke();
     }
 
     public void CreateProjectile()
     {
-        OnCreatedProjectile?.Invoke();
+        OnShootProjectile?.Invoke();
     }
 }

@@ -13,6 +13,8 @@ public class FigureConfig : ScriptableObject
     public float AttackRange => attackRange;
     public float MoveSpeed => moveSpeed;
     public FigureType FigureType => figureType;
+    public bool IsRanged => isRanged;
+    public GameObject Projectile => projectile;
         
     [SerializeField]
     private GameObject whiteFigurePrefab;
@@ -28,7 +30,11 @@ public class FigureConfig : ScriptableObject
     private float attackRange;
     [SerializeField] 
     private int attackCooldown;
-    [FormerlySerializedAs("chessType")] [SerializeField] 
+    [SerializeField] 
     private FigureType figureType;
+    [SerializeField] 
+    private bool isRanged;
+    [SerializeField]
+    private GameObject projectile;
 }
 

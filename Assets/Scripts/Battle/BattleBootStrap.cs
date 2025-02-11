@@ -32,16 +32,6 @@ public class BattleBootStrap : MonoBehaviour
 
     private void Awake()
     {
-         blackFigures.Add(143, FigureType.pawn); 
-         blackFigures.Add(142, FigureType.pawn);
-         blackFigures.Add(141, FigureType.pawn);
-         blackFigures.Add(140, FigureType.pawn);
-         blackFigures.Add(139, FigureType.pawn);
-         blackFigures.Add(138, FigureType.pawn);
-         blackFigures.Add(137, FigureType.pawn);
-         blackFigures.Add(136, FigureType.pawn);
-         
-        
         LoadDesk();
  
         navmesh = GetComponent<NavMeshSurface>();
